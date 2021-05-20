@@ -11,7 +11,8 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @Service
 public class FoodService {
-    private final FoodRepository repository;
+    //private final FoodRepository repository;
+    private final FoodRepository repository = null;
 
     public List<Food> getFoods() {
         return repository.findAll();

@@ -13,7 +13,8 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 public class FoodController {
-    private final FoodService service;
+    //private final FoodService service;
+    private final FoodService service = null;
 
     @GetMapping("/foods")
     public List<Food> getFoods() {
