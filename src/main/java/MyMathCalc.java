@@ -1,9 +1,6 @@
 
 
 public class MyMathCalc {
-    public static void main(String[] arg){
-
-    }
 
     public int add(int a, int b){
         return a + b;
