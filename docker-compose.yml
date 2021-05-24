@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  mongo:
+    image: mongo:latest
+    ports: # (host:container)
+      - 27017:27017
+    volumes:
+      - /data/db
+
+  mongo-express:
+    image: mongo-express
+    ports:
+      - 8081:8081
+    depends_on:
+      - mongo
