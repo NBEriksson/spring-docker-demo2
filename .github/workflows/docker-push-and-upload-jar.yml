@@ -32,11 +32,10 @@ jobs:
         with:
           context: .
           push: true
-          #tags: nina74/test1-image:${{ github.run_number}}
-          tags: nina74/test1-image:latest
+          tags: nina74/test1-image:${{ github.run_number}}
 
       - name: Upload Artifact
-          uses: actions/upload-artifact@v2
-          with:
-            name: app.jar
-            path: target/*.jar
+        uses: actions/upload-artifact@v2
+        with:
+          name: app.jar
+          path: target/*.jar
