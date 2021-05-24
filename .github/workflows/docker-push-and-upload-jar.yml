@@ -1,4 +1,4 @@
-name: PushUpload CI
+name: PushAndUpload CI
 
 on:
   workflow_dispatch:
