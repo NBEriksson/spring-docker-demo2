@@ -19,7 +19,6 @@ jobs:
           distribution: 'adopt'
 
       - name: Build Jar
-        #run: mvn test
         run: mvn clean install
 
       - name: Docker Hub Login
@@ -33,7 +32,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: nina74/ninas-image:${{ github.run_number}}
+          tags: nina74/image:${{ github.run_number}}
 
       - name: Upload jar
         uses: actions/upload-artifact@v2
